@@ -111,9 +111,17 @@ python setup.py develop
 ## 5 - 验证安装是否正确
 
 ```shell
+... 
+Using /root/anaconda3/envs/torch-build/lib/python3.10/site-packages
+Finished processing dependencies for torch==2.6.0a0+gitd6f340f   #编译正确的输出
 
+(torch-build) root@my_mahcine:/pytorch# python
+Python 3.10.15 (main, Oct  3 2024, 07:27:34) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+>>> torch.__version__
+'2.6.0a0+gitd6f340f
 ```
-
 
 
 # 代码模板介绍
@@ -123,7 +131,7 @@ python setup.py develop
 + `Lab4-tamplate`文件结构介绍
 
 ```shell
-Lab4-tamplate
+Transformer_lab_for_freshman
 ├── log   # 训练的loss图，推理4个例子的heatmap
 ├── data  # 存放NLP任务的数据集 
 │   ├── fra-eng
